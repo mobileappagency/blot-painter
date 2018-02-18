@@ -11,10 +11,6 @@ type Props = {
     onPress: () => Function
 }
 
-function navigateTo(route) {
-  console.log(route);
-}
-
 export default function ButtonsGroup (props: Props) {
   return (
     <View style={styles.container}>

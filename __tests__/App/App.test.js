@@ -11,8 +11,8 @@ describe('<App /> :: Test Suite', () => {
   });
 
   describe('<App /> :: Test Suite', () => {
-    it('Should render WelcomeScene component', () => {
-        expect(wrapper.find('WelcomeScene')).toHaveLength(1);
+    it('Should render Router instance', () => {
+        expect(wrapper.find('.app-router').props().className).toContain('app-router');
     });
     
   })
