@@ -11,6 +11,6 @@ describe('<PainterScene /> :: Test Suite', () => {
   });
 
   it('Renders the action TouchableOpacity button', () => {
-      expect(wrapper.find('TouchableOpacity')).toHaveLength(1);
+      expect(wrapper.find('ClickableCircle')).toHaveLength(1);
   })
 })

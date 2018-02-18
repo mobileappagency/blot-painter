@@ -2,12 +2,18 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 
-type Props = {}
+import { ClickableCircle } from '@components';
+
+type Props = {
+    fillElement: () => Function
+}
+
+let textComponent = <Text>+</Text>;
 
 export default function PainterScene (props: Props) {
   return (
     <View>
-        <TouchableOpacity />
+        <ClickableCircle fillElement={textComponent} />
     </View>
   )
 }
