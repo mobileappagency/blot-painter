@@ -1,15 +1,18 @@
 import { StackNavigator } from 'react-navigation';
 
-import { WelcomeScene } from '@scenes';
+import { routes } from '@constants';
+import { WelcomeScene, PainterScene } from '@scenes';
 
 export default Router = StackNavigator(
     {
       Main: {
         screen: WelcomeScene,
+      },
+      Painter: {
+        screen: PainterScene
       }
     },
     {
-      initialRouteName: 'Main',
+      initialRouteName: routes.Main,
     }
 );
-

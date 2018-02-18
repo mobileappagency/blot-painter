@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, Button } from 'react-native';
 
 import { styles } from '@components/ButtonsGroup/Styles';
-import * as constants from '@constants';
+import { routes } from '@constants';
 
 type Props = {
     styles: object,
@@ -16,10 +16,9 @@ export default function ButtonsGroup (props: Props) {
     <View style={styles.container}>
         <Button
           className="start-btn"
-          onPress={() => navigateTo(constants.PAINTER_ROUTE)}
+          onPress={() => props.navigateTo(props, routes.Painter)}
           style={styles.button}
           title="Start"
-          onPress={() => {}}
         />
         <Button
           className="library-btn"

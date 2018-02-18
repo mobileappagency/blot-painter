@@ -7,7 +7,8 @@
           "@components": "./src/components",
           "@scenes": "./src/scenes",
           "@constants": "./src/constants",
-          "@services": "./src/services"
+          "@services": "./src/services",
+          "@lib": "./src/lib"
         }
       }
     ]]

@@ -3,7 +3,7 @@ export const styles = {
 
     },
     button: {
-        width: '200px',
-        marginBottom: 'auto'
+        // width: '200px',
+        // marginBottom: 'auto'
     }
 }

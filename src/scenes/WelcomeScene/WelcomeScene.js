@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Text, Button } from 'react-native';
 
 import * as constants from '@constants'
+import { navigateTo } from '@lib';
 import { ButtonsGroup } from '@components';
 import { styles } from '@scenes/WelcomeScene/Styles';
 
@@ -17,7 +18,7 @@ export default function WelcomeScene (props: Props) {
       <Text>
         {constants.WELCOME_MESSAGE}
       </Text>
-      <ButtonsGroup />
+      <ButtonsGroup { ...props} navigateTo={navigateTo} />
     </View>
   )
 }
